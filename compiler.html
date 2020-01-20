@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head #top>
+	<link rel="stylesheet" href="default.css" type="text/css">
+	  
+	<title>Programmeertalen</title>
+	<div class="header">
+		 Programmeertalen
+	</div>
+	
+	<ul class="navbar">
+  		<li class="navbar"><a class="active" href="index.html">Home</a></li>
+  		<li class="navbar"><a class="navbar" href="geschiedenis.html">Vroege geschiedenis</a></li>
+  		<li class="navbar"><a class="navbar" href="fortran.html">Fortran</a></li>
+  		<li class="navbar"><a class="navbar" href="java.html">Java</a></li>
+		<li class="navbar"><a class="navbar" href="javascript.html">Javascript</a></li>
+		<li class="navbar"><a class="navbar" href="c++.html">C++</a></li>
+		<li class="navbar"><a class="navbar" href="python.html">Python</a></li>
+		<li class="navbar"><a class="navbar" href="compiler.html">Compiler</a></li>
+		<li class="navbar"><a class="navbar" href="bronnen.html">Bronnen</a></li>
+		<li class="navbar"><a class="navbar" href="contact.html">Contact</a></li>
+	</ul>
+</head>
+
+<body height=100%>
+	  <table border=0 width=95% align=center>
+	  		 <tr>
+	  		 	 <td width=17.5% align=left valign=top></td>	 
+				 <td class="center" width=32.5% align=left valign=top>Een programmeertaal is vaak vrij gemakkelijk voor mensen om te lezen, maar de computer kan de programmeertaal niet lezen en dus ook niet uitvoeren. 
+				 	 									   				  		De code moet eerst worden omgezet naar Machine Code om vervolgens uit gevoerd te kunnen worden. 
+																				Dit is de taak van een compiler het “vertaalt” een bepaalde programmeertaal naar Machine Code. 
+																				Compiler kunnen verder worden onderverdeeld in soorten compilers. 
+																				Als de compiler de code naar Machine Code voor verschillende apparaten (computers, smartphones of een spelcomputer bijvoorbeeld) kan omzetten dan wordt het een cross-compiler genoemd. 
+																				Als de compiler Machine Code kan omzetten naar een leesbare programmeertaal dan is het een decompiler. </td>
+				 <td class="center2"width=32.5% valign=top><img src="compiler.jpg" width="400" height="300" alt="" border="0"></td>
+				 <td width=17.5% align=left valign=top></td>
+	  		 </tr>
+			 
+			  <tr>
+	  		 	 <td width=20% align=left valign=top></td>
+				 	 
+				 <td class="center3" width=30% align=left valign=top colspan="2"><h2>Hoe werkt een compiler?</h2>
+				 	 				 		   			  			 			Een compiler bestaat uit meerdere delen die allemaal een deel van het werk doen. 
+																				Het eerste deel is de ‘lexical analyzer’, het leest de code en verdeeld de tekst in verschillende woorden. 
+																				Het geeft ook aan om wordt voor soort woord het gaat. Een woord kan bijvoorbeeld een getal, variabele of een rekenkundige bewerking zijn. 
+																				De ‘lexical analyzer’ verzamelt al deze data en geeft deze door aan de volgende stap in het ‘compilen’ van de code de parser.<br><br>
+																				
+																				De ‘parser’ leest de data van de ‘lexical analyzer’ en controleert of de syntax correct is. 
+																				Als de code niet correct is volgens de gespecifieerde syntax van de programmeertaal of er zit een typefout in de code dan geeft het een foutmelding. 
+																				Als de code echter correct is dan gebruikt de ‘parser’ de informatie van de ‘lexical analyzer’ om een ‘Abstract Syntax Tree (AST)’ te maken. 
+																				De ‘parser’ doet dit om de structuur van de code te achterhalen en het wordt hierdoor gemakkelijker om de code naar Machine Code om te zetten.
+																				De volgende stap is ‘semantic analysis’ bij deze stap wordt de AST gebruikt om te analyseren wat er in het geheugen van de computer moet worden opgeslagen, zoals de namen en waarden van variabelen en de namen van de door de programmeur geschreven functies.<br><br>
+																				
+																				Na deze stappen is er nog een laatste stap voor de code daadwerkelijk naar Machine Code kan worden omgezet. 
+																				Deze stap is het optimaliseren van de AST, de AST wordt herschikt. 
+																				Dit wordt gedaan om bijvoorbeeld dezelfde code uittevoeren met minder instructies en op die manier wordt er ruimte bespaart. 
+																				Dit is vooral belangrijk voor code met veel instructies. 
+																				De geoptimaliseerde AST heeft bijvoorbeeld een lange instructie omgezet in een aantal kleinere instructies. 
+																				Ongebruikte en overbodige code wordt bij deze stap tevens verwijderd. 
+																				Het laatste wat de compiler nu nog hoeft te doen is aan de hand van de geoptimaliseerde AST de code omzetten in Machine Code dat hetzelfde resultaat bereikt.<br><br>
+																				
+																				Programmeurs die compilercode schrijven, proberen deze zo perfect mogelijk te maken. 
+																				Als de programmeur onjuiste code schrijft, geeft de compiler een foutmelding, maar als de compilercode zelf fouten bevat, kan het moeilijk zijn om uit te maken waar het probleem precies ligt. </td>
+				 	 
+				 <td width=20% align=left valign=top></td>
+	  		 </tr>
+	  </table>
+	  
+<div class="footer">
+	  	   Gemaakt door Daniël 't Mannetje<br>
+		   <a href="#top" class="top_link">Terug naar de top</a><br><br>
+		   <div class="copyright">&copy; 2020 Daniël 't Mannetje</div>
+</div>
+</body>
+
+
+	  
+</html>
